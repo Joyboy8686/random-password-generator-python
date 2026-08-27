@@ -5,6 +5,7 @@ from a mix of uppercase letters, lowercase letters, numbers, and symbols, with
 input validation on the desired length.
 
 ## Features
+
 - Combines uppercase, lowercase, numbers, and symbols into one character pool
 - Generates a password using random selection **with repetition allowed**
   (matches how real-world passwords work — characters can repeat)
@@ -14,6 +15,7 @@ input validation on the desired length.
 - Clearly labeled output (`PASSWORD : ...`) instead of printing the raw string alone
 
 ## Concepts practiced
+
 - The `random` module — specifically `random.choices()` vs `random.sample()`,
   and why `choices()` (allows repetition) is the correct tool for password
   generation rather than `sample()` (no repetition, which artificially shrinks
@@ -27,11 +29,13 @@ input validation on the desired length.
   not just a technical requirement
 
 ## How to run
+
 ```bash
-python password_generator.py
+python randompassgene.py
 ```
 
 ## Example
+
 ```
 RANDOM PASSWORD GENERATOR
 
@@ -41,6 +45,7 @@ PASSWORD : aG7$kLp9@qXz
 ```
 
 ## What I learned
+
 This project builds on the input-validation pattern from my Contact Book project.
 The interesting part was realizing `random.sample()` — which felt like the obvious
 choice at first — actually forces every character in the password to be unique,
